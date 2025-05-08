@@ -8,6 +8,9 @@
  ### Interfaces are mostly used for defining custom types for objects. They are used for shaping objects structure. it is useful when we are working with objects and classes. Interfaces can be easily extended using merging. same named interface can be merge easily.
 
 
+
+
+
 # Blog-2: How does TypeScript help in improving code quality and project maintainability?
 
 
