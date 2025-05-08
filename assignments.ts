@@ -76,3 +76,42 @@ function getMostExpensiveProduct(products: Product[]): Product | null{
   }
     return expensiveProduct;
 }
+
+
+
+
+enum Day {
+  Monday,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday,
+  Sunday
+}
+
+function getDayType(day: Day): string{
+  switch(day){ 
+     case Day.Saturday:
+      return "Weekend";
+  case Day.Sunday:
+    return "Weekend";
+default:
+  return "Weekday";
+  }
+}
+
+
+
+
+async function squareAsync(n: number): Promise<number> {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (n < 0) {
+        reject(new Error("Error: Negative number not allowed"));
+      } else {
+        resolve(n * n);
+      }
+    }, 1000);
+  });
+}
